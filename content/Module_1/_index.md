@@ -231,9 +231,6 @@ ___
 Individuals or groups can **edit this plan online** after the session and share it in the group chat, then ask others for feedback.
 
 **Labour division for this module:**
-- Lead trainer: PARI team (Ritu, Smita, colleagues)
-- Co-trainers: Ramjit Tudu · Shalini A (sections 1.3, 1.4)
-- PARK — Rabindra Gilua (community organising, Adivasi cultural documentation and metadata)
-- Emerging mentor: PARK — Palivela Krupal (outreach, customised curricula, community capacity work)
+- Co-trainers: Ganesh Birua, Ramjit Tudu, Shalini A (sections 1.3, 1.4)
 
 {{</revealjs>}}
