@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://ofdn.github.io/clda/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "CLDA-Community language documentation and archiving Training"
