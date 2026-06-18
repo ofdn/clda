@@ -42,33 +42,11 @@ https://github.com/ofdn/clda/edit/main/content/Module_1/intro.md
 - Front matter at the top of each file (between `+++` markers) controls the page title and sidebar order — leave it unchanged unless you intend to rename the page.
 - If you want to preview your changes locally before opening a pull request, follow the [local setup](#prerequisites) steps below.
 
-## Localisation (French and Hindi)
+## Localisation
 
 Hugo handles multilingual sites through two mechanisms: **content translation** (parallel Markdown files) and **UI string translation** (i18n files).
 
-### 1. Enable languages in `config.toml`
-
-Uncomment and extend the `[Languages]` block:
-
-```toml
-[Languages]
-  [Languages.en]
-  title = "CLDA Training"
-  weight = 1
-  languageName = "English"
-
-  [Languages.fr]
-  title = "Formation CLDA"
-  weight = 2
-  languageName = "Français"
-
-  [Languages.hi]
-  title = "CLDA प्रशिक्षण"
-  weight = 3
-  languageName = "हिन्दी"
-```
-
-### 2. Translate content files
+### Translate content files
 
 For each page you want to translate, create a copy of the Markdown file with the language code inserted before `.md`:
 
@@ -80,7 +58,7 @@ content/Module_1/_index.hi.md     ← Hindi
 
 The front matter title and body text should be fully translated. Hugo automatically links the language variants together and shows a language switcher in the nav.
 
-### 3. Translate UI strings
+### Translate UI strings
 
 Create `i18n/fr.toml` and `i18n/hi.toml` alongside the existing `i18n/en.toml` and translate each string:
 
@@ -93,7 +71,7 @@ other = "इस पृष्ठ को संपादित करें"
 other = "खोजें..."
 ```
 
-### 4. Test the localised build
+### Test the localised build
 
 ```bash
 hugo server

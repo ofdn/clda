@@ -11,24 +11,24 @@ defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
 
 
-# Uncomment to enable multilingual support (French and Hindi).
 # Content translations go in content/<page>.<lang>.md (e.g. _index.fr.md, _index.hi.md).
 # UI string translations go in i18n/fr.toml and i18n/hi.toml.
-# [Languages]
-# [Languages.en]
-# title = "CLDA Training"
-# weight = 1
-# languageName = "English"
-#
-# [Languages.fr]
-# title = "Formation CLDA"
-# weight = 2
-# languageName = "Français"
-#
-# [Languages.hi]
-# title = "CLDA प्रशिक्षण"
-# weight = 3
-# languageName = "हिन्दी"
+
+[Languages]
+  [Languages.en]
+  title = "CLDA Training"
+  weight = 1
+  languageName = "English"
+
+  [Languages.fr]
+  title = "Formation CLDA"
+  weight = 2
+  languageName = "Français"
+
+  [Languages.hi]
+  title = "CLDA प्रशिक्षण"
+  weight = 3
+  languageName = "हिन्दी"
 
 [minify]
   disableHTML = true
