@@ -1,0 +1,8 @@
+[build]
+  command   = "npm install && git submodule update --init --recursive && hugo --minify"
+  publish   = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  HUGO_VERSION = "0.133.0"
+  NODE_VERSION = "18"

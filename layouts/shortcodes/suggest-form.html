@@ -1,0 +1,83 @@
+<form id="hugo-edit-form" style="max-width:600px">
+  <p style="color:#555;font-size:.95rem;margin-top:0">
+    No GitHub account needed. Your suggestion is sent to maintainers as a pull request.
+  </p>
+
+  <label style="display:block;font-weight:600;margin-bottom:.25rem" for="sf-name">Your name <span style="color:red">*</span></label>
+  <input id="sf-name" type="text" placeholder="Ramjit Tudu" required
+    style="display:block;width:100%;box-sizing:border-box;padding:8px 10px;margin-bottom:1rem;border:1px solid #ccc;border-radius:5px;font-size:.95rem">
+
+  <label style="display:block;font-weight:600;margin-bottom:.25rem" for="sf-email">Your email <span style="color:red">*</span></label>
+  <input id="sf-email" type="email" placeholder="you@example.com" required
+    style="display:block;width:100%;box-sizing:border-box;padding:8px 10px;margin-bottom:1rem;border:1px solid #ccc;border-radius:5px;font-size:.95rem">
+
+  <label style="display:block;font-weight:600;margin-bottom:.25rem" for="sf-module">Module <span style="color:red">*</span></label>
+  <select id="sf-module" required
+    style="display:block;width:100%;box-sizing:border-box;padding:8px 10px;margin-bottom:1rem;border:1px solid #ccc;border-radius:5px;font-size:.95rem">
+    <option value="">— select —</option>
+    <option>Module 1 — Planning before documenting</option>
+    <option>Module 2 — Consent, ethics and payment</option>
+    <option>Module 3 — How to record clear audio and video</option>
+    <option>Module 4 — How to manage files safely</option>
+    <option>Module 5 — How to edit audio and video for sharing</option>
+    <option>Module 6 — How to prepare media for Wikimedia Commons</option>
+    <option>Module 7 — How to share with archives and communities</option>
+    <option>Module 8 — Glossary</option>
+    <option>Module 9 — Annexure: Text Style Guide</option>
+    <option>Module 10 — Annexure: Oral Knowledge</option>
+    <option>Other</option>
+  </select>
+
+  <label style="display:block;font-weight:600;margin-bottom:.25rem" for="sf-desc">What should change? <span style="color:red">*</span></label>
+  <input id="sf-desc" type="text" placeholder="e.g. Section 3.2 has an incorrect microphone distance" required
+    style="display:block;width:100%;box-sizing:border-box;padding:8px 10px;margin-bottom:1rem;border:1px solid #ccc;border-radius:5px;font-size:.95rem">
+
+  <label style="display:block;font-weight:600;margin-bottom:.25rem" for="sf-suggestion">Suggested new content <span style="color:#888;font-weight:400">(optional)</span></label>
+  <textarea id="sf-suggestion" placeholder="Paste the corrected text or new content here…"
+    style="display:block;width:100%;box-sizing:border-box;padding:8px 10px;margin-bottom:1.25rem;border:1px solid #ccc;border-radius:5px;font-size:.95rem;min-height:130px;resize:vertical;font-family:inherit"></textarea>
+
+  <button type="submit" id="sf-btn"
+    style="padding:10px 22px;background:#2d6a9f;color:#fff;border:none;border-radius:5px;font-size:1rem;cursor:pointer;font-family:inherit">
+    Submit suggestion
+  </button>
+  <div id="sf-status" style="margin-top:1rem;font-size:.95rem"></div>
+</form>
+
+<script>
+document.getElementById("hugo-edit-form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  var btn    = document.getElementById("sf-btn");
+  var status = document.getElementById("sf-status");
+  btn.disabled    = true;
+  btn.textContent = "Submitting…";
+  status.textContent = "";
+  status.style.color = "";
+
+  var payload = {
+    name:        document.getElementById("sf-name").value.trim(),
+    email:       document.getElementById("sf-email").value.trim(),
+    module:      document.getElementById("sf-module").value,
+    description: document.getElementById("sf-desc").value.trim(),
+    suggestion:  document.getElementById("sf-suggestion").value.trim(),
+  };
+
+  try {
+    var res  = await fetch("/.netlify/functions/submit-pr", {
+      method:  "POST",
+      headers: { "Content-Type": "application/json" },
+      body:    JSON.stringify(payload),
+    });
+    var data = await res.json();
+    if (!res.ok) throw new Error(data.error || "Unknown error");
+    status.style.color = "#1a7a1a";
+    status.innerHTML   = "Thanks! Your suggestion has been submitted. <a href=\"" + data.prUrl + "\" target=\"_blank\" rel=\"noopener\">View pull request →</a>";
+    e.target.reset();
+  } catch (err) {
+    status.style.color = "#c0392b";
+    status.textContent = "Something went wrong: " + err.message;
+  } finally {
+    btn.disabled    = false;
+    btn.textContent = "Submit suggestion";
+  }
+});
+</script>
