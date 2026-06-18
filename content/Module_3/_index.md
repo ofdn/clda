@@ -7,7 +7,7 @@ alwaysopen = false
 
 Trainer goal
 Help participants understand how to record clear, honest audio and video with the tools they already have, in ways that respect people’s comfort and safety.
-3.1 Prepare people and space (Trainer:akumbu@endangeredlanguages.com)
+3.1 Prepare people and space (Trainer:Pius Akumbu)
 Your consultants (speakers)
 1. Approach your speakers and introduce the recording session in a
 respectful and inviting manner.
@@ -30,7 +30,7 @@ Recording conditions
 themselves if needed.
 
 
-3.2 Use phones and other devices well (trainer: akumbu@endangeredlanguages.com)
+3.2 Use phones and other devices well (trainer: Pius Akumbu)
 Recording equipment settings
 1. Quality recordings can be made with phones, audio recorders, or video
 cameras. Make good use of what you have. Usually, your phone settings
@@ -62,7 +62,7 @@ approximately 10 hours of footage.
 than accumulating all in a single SD card.
 
 
-3.3 Audio/Sound: clear voice (trainer: akumbu@endangeredlanguages.com)
+3.3 Audio/Sound: clear voice (trainer: Pius Akumbu)
 Distance between mouth and microphone; avoiding rubbing noise.
 For clear sound, be careful about the distance between the microphone and the speaker’s mouth. For example, if using a lavalier microphone, place it approximately 15-30cm (6-12 inches) away from your speaker’s mouth.
 Managing background sounds (traffic, animals, loudspeakers) without erasing local life.
