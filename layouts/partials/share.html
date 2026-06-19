@@ -1,0 +1,18 @@
+{{ $url := .Permalink }}
+{{ $title := .Title }}
+
+<section style="margin: 2rem 0;">
+  <p style="font-size:0.85em; text-transform:uppercase; letter-spacing:0.05em; color:#999; margin-bottom:0.6rem;">Share this page</p>
+  <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+    <a href="https://x.com/intent/tweet?url={{ $url | htmlEscape }}&text={{ $title | htmlEscape }}"
+       target="_blank" rel="noopener"
+       style="display:inline-flex; align-items:center; gap:0.35rem; padding:0.35rem 0.7rem; border-radius:4px; background:#000; color:#fff; font-size:0.8em; text-decoration:none;">
+      <i class="fa fa-fw fa-twitter"></i> X
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ $url | htmlEscape }}"
+       target="_blank" rel="noopener"
+       style="display:inline-flex; align-items:center; gap:0.35rem; padding:0.35rem 0.7rem; border-radius:4px; background:#1877f2; color:#fff; font-size:0.8em; text-decoration:none;">
+      <i class="fa fa-fw fa-facebook"></i> Facebook
+    </a>
+  </div>
+</section>
