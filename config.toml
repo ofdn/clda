@@ -52,7 +52,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-home'></i> <label>Home</label>"
-url = "/"
+url = "/clda/"
 weight = 9
 
 [[menu.shortcuts]]
