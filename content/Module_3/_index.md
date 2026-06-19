@@ -5,9 +5,18 @@ weight = 30
 alwaysopen = false
 +++
 
-Trainer goal
+How to choose the right device.
+How to test audio before recording.
+How to keep notes on speaker name, date, place, and topic. (metadata)
+How to record in a quiet place.
+
+
+# Trainer goal
+
 Help participants understand how to record clear, honest audio and video with the tools they already have, in ways that respect people’s comfort and safety.
-3.1 Prepare people and space (Trainer:Pius Akumbu)
+
+# 3.1 Prepare people and space (Trainer:Pius Akumbu)
+
 Your consultants (speakers)
 1. Approach your speakers and introduce the recording session in a
 respectful and inviting manner.
@@ -30,25 +39,30 @@ Recording conditions
 themselves if needed.
 
 
-3.2 Use phones and other devices well (trainer: Pius Akumbu)
+# 3.2 Use phones and other devices well (trainer: Pius Akumbu)
+
 Recording equipment settings
 1. Quality recordings can be made with phones, audio recorders, or video
 cameras. Make good use of what you have. Usually, your phone settings
 will be good for audio/video recordings. Check the settings on your
 audio/video recording devices to ensure you are capturing sound properly
 and satisfactorily.
+
 2. If using external microphones (recommended), check that all connections
 and settings allow for sound to be captured.
 Stationing recording equipment
+
 1. Setting up your recording device relative to the speaker(s) is crucial. If
 using a phone or audio recorder, set it up on a table between you and the
 speaker(s). If using an external microphone with recording device, make
 sure you have both the recording device and microphone in good
 locations or range to pick up the speaker’s voice. If you have
 headphones, use them check if the sound if adequate.
+
 2. If you must hold your phone in your hand do your best to keep it steady.
 Nice if you have tripod stand for video camera. Move your device
 gently/slowly if needed to capture certain actions.
+
 3. Check lighting because it can make or break the quality of your video.
 Experiment with different lighting setups and find what works best for you.
 
@@ -86,5 +100,8 @@ Recognising that the trainer may also carry emotional load and needs support.
 Make pairs, each pair records a 3–5 minute conversation in a local language.
 Watch or listen together and note: one thing that worked well, one thing to improve for sound, one for picture, one for comfort.
 Ask: “Will you be happy if this was shared widely?” and discuss why or why not.
-Reading resource
+
+
+#Reading resource
+
 PARI Guidelines

@@ -5,6 +5,13 @@ weight = 10
 alwaysopen = false
 +++
 
+How to choose the language or language community.
+How to decide what kind of material to record.
+How to set a realistic goal for the day or project.
+How to get money to pay people for labour.
+
+
+
 {{<revealjs theme="moon" progress="true" controls="true">}}
 
 ## Module 1

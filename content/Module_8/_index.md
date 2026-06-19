@@ -3,6 +3,7 @@ title = "Glossary"
 description = "Key terms and definitions for community language documentation and archiving."
 weight = 80
 alwaysopen = false
+draft = false
 +++
 
 This glossary lists preferred terms and terms to avoid when writing about languages, communities, and identities in the context of community language documentation and archiving.

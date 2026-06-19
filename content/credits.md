@@ -5,6 +5,12 @@ description = "contributors and packages used by hugo-theme-docdock"
 
 ## Contributors
 
+Organised by: OpenSpeaks
+
+Collaborators: FOSS United, Whose Knowledge?, Adivasi Lives Matter, People’s Archive of Rural India (PARI), Endangered Languages Project
+
+Supported by: Wikimedia Foundation
+
 
 Module co-authors:
 1. Ganesh Birua is a Ho language activist from Mayurbhanj, Odisha. Since 2017, he has created hundreds of educational images, run the Warang Chiti Project 2030, and collaborated with OpenSpeaks Archives on transcriptions and translations.

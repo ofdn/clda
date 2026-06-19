@@ -5,6 +5,14 @@ weight = 20
 alwaysopen = false
 +++
 
+
+How to explain the project to the community in simple language.
+How to get consent from speakers and contributors.
+How to discuss credit, shared ownership, and payment for labour.
+How to decide what can be shared openly and what should stay private.
+
+
+
 ## Check your understanding
 
 {{< quizdown >}}
