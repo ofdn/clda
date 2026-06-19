@@ -2,7 +2,7 @@
 title = "How to record clear audio and video"
 description = "How to record clear audio and video in real-world conditions."
 weight = 30
-alwaysopen = false
+alwaysopen = true
 +++
 
 How to choose the right device.
